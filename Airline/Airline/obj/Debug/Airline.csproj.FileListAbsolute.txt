@@ -1,0 +1,17 @@
+C:\Users\Khanh Du\source\repos\Airline\Airline\bin\Debug\Airline.exe.config
+C:\Users\Khanh Du\source\repos\Airline\Airline\bin\Debug\Airline.exe
+C:\Users\Khanh Du\source\repos\Airline\Airline\bin\Debug\Airline.pdb
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.csprojResolveAssemblyReference.cache
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.Form1.resources
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.Properties.Resources.resources
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.csproj.GenerateResource.cache
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.csproj.CoreCompileInputs.cache
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.exe
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.pdb
+C:\Users\Khanh Du\source\repos\Airline\Airline\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.csproj.CopyComplete
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.SearchControl.resources
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.SaleControl.resources
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.DatabaseControl.resources
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.ReportControl.resources
+C:\Users\Khanh Du\source\repos\Airline\Airline\obj\Debug\Airline.RuleChangeControl.resources
