@@ -34,7 +34,7 @@
             this.bookBt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dataBt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.reportBt = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.changeBt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.closeBt = new Bunifu.Framework.UI.BunifuThinButton2();
             this.reportControl1 = new Airline.ReportControl();
@@ -52,6 +52,8 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 485);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseLeave += new System.EventHandler(this.panel1_MouseLeave);
+            this.panel1.MouseHover += new System.EventHandler(this.panel1_MouseHover);
             // 
             // searchBt
             // 
@@ -87,6 +89,7 @@
             this.searchBt.Textcolor = System.Drawing.Color.White;
             this.searchBt.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBt.Click += new System.EventHandler(this.saleBt_Click);
+            this.searchBt.MouseHover += new System.EventHandler(this.searchBt_MouseHover);
             // 
             // bookBt
             // 
@@ -193,40 +196,40 @@
             this.reportBt.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportBt.Click += new System.EventHandler(this.reportBt_Click);
             // 
-            // bunifuFlatButton1
+            // changeBt
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "  Rules Change";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 70D;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 390);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(200, 53);
-            this.bunifuFlatButton1.TabIndex = 5;
-            this.bunifuFlatButton1.Text = "  Rules Change";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            this.changeBt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
+            this.changeBt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.changeBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.changeBt.BorderRadius = 0;
+            this.changeBt.ButtonText = "  Rules Change";
+            this.changeBt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.changeBt.DisabledColor = System.Drawing.Color.Gray;
+            this.changeBt.Iconcolor = System.Drawing.Color.Transparent;
+            this.changeBt.Iconimage = ((System.Drawing.Image)(resources.GetObject("changeBt.Iconimage")));
+            this.changeBt.Iconimage_right = null;
+            this.changeBt.Iconimage_right_Selected = null;
+            this.changeBt.Iconimage_Selected = null;
+            this.changeBt.IconMarginLeft = 0;
+            this.changeBt.IconMarginRight = 0;
+            this.changeBt.IconRightVisible = true;
+            this.changeBt.IconRightZoom = 0D;
+            this.changeBt.IconVisible = true;
+            this.changeBt.IconZoom = 70D;
+            this.changeBt.IsTab = true;
+            this.changeBt.Location = new System.Drawing.Point(0, 390);
+            this.changeBt.Name = "changeBt";
+            this.changeBt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.changeBt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
+            this.changeBt.OnHoverTextColor = System.Drawing.Color.White;
+            this.changeBt.selected = false;
+            this.changeBt.Size = new System.Drawing.Size(200, 53);
+            this.changeBt.TabIndex = 5;
+            this.changeBt.Text = "  Rules Change";
+            this.changeBt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.changeBt.Textcolor = System.Drawing.Color.White;
+            this.changeBt.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeBt.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // bunifuThinButton21
             // 
@@ -235,6 +238,7 @@
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(235)))), ((int)(((byte)(243)))));
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(235)))), ((int)(((byte)(243)))));
+            this.bunifuThinButton21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(235)))), ((int)(((byte)(243)))));
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "_";
@@ -262,6 +266,7 @@
             this.closeBt.ActiveFillColor = System.Drawing.Color.Red;
             this.closeBt.ActiveForecolor = System.Drawing.Color.White;
             this.closeBt.ActiveLineColor = System.Drawing.Color.Red;
+            this.closeBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeBt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(235)))), ((int)(((byte)(243)))));
             this.closeBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeBt.BackgroundImage")));
             this.closeBt.ButtonText = "x  ";
@@ -284,6 +289,8 @@
             // 
             // reportControl1
             // 
+            this.reportControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.reportControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.reportControl1.Cursor = System.Windows.Forms.Cursors.No;
             this.reportControl1.Location = new System.Drawing.Point(201, 100);
             this.reportControl1.Name = "reportControl1";
@@ -294,6 +301,7 @@
             // 
             // ruleChangeControl1
             // 
+            this.ruleChangeControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ruleChangeControl1.Location = new System.Drawing.Point(201, 100);
             this.ruleChangeControl1.Name = "ruleChangeControl1";
             this.ruleChangeControl1.Size = new System.Drawing.Size(599, 349);
@@ -302,6 +310,7 @@
             // 
             // databaseControl1
             // 
+            this.databaseControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.databaseControl1.Location = new System.Drawing.Point(201, 100);
             this.databaseControl1.Name = "databaseControl1";
             this.databaseControl1.Size = new System.Drawing.Size(599, 349);
@@ -310,6 +319,7 @@
             // 
             // saleControl1
             // 
+            this.saleControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.saleControl1.Location = new System.Drawing.Point(201, 100);
             this.saleControl1.Name = "saleControl1";
             this.saleControl1.Size = new System.Drawing.Size(599, 349);
@@ -318,7 +328,8 @@
             // 
             // searchControl1
             // 
-            this.searchControl1.Location = new System.Drawing.Point(202, 100);
+            this.searchControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.searchControl1.Location = new System.Drawing.Point(201, 100);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Size = new System.Drawing.Size(599, 349);
             this.searchControl1.TabIndex = 6;
@@ -337,13 +348,14 @@
             this.Controls.Add(this.databaseControl1);
             this.Controls.Add(this.saleControl1);
             this.Controls.Add(this.searchControl1);
-            this.Controls.Add(this.bunifuFlatButton1);
+            this.Controls.Add(this.changeBt);
             this.Controls.Add(this.reportBt);
             this.Controls.Add(this.dataBt);
             this.Controls.Add(this.bookBt);
             this.Controls.Add(this.searchBt);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -358,7 +370,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton bookBt;
         private Bunifu.Framework.UI.BunifuFlatButton dataBt;
         private Bunifu.Framework.UI.BunifuFlatButton reportBt;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton changeBt;
         private SearchControl searchControl1;
         private SaleControl saleControl1;
         private DatabaseControl databaseControl1;

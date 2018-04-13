@@ -53,7 +53,7 @@
             this.passengerName.LineIdleColor = System.Drawing.Color.Gray;
             this.passengerName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.passengerName.LineThickness = 3;
-            this.passengerName.Location = new System.Drawing.Point(152, 93);
+            this.passengerName.Location = new System.Drawing.Point(251, 93);
             this.passengerName.Margin = new System.Windows.Forms.Padding(4);
             this.passengerName.Name = "passengerName";
             this.passengerName.Size = new System.Drawing.Size(260, 33);
@@ -64,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 65);
+            this.label1.Location = new System.Drawing.Point(95, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(182, 21);
             this.label1.TabIndex = 1;
@@ -82,7 +82,7 @@
             this.contactName.LineIdleColor = System.Drawing.Color.Gray;
             this.contactName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.contactName.LineThickness = 3;
-            this.contactName.Location = new System.Drawing.Point(152, 168);
+            this.contactName.Location = new System.Drawing.Point(251, 163);
             this.contactName.Margin = new System.Windows.Forms.Padding(4);
             this.contactName.Name = "contactName";
             this.contactName.Size = new System.Drawing.Size(260, 33);
@@ -93,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 136);
+            this.label2.Location = new System.Drawing.Point(95, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 21);
             this.label2.TabIndex = 4;
@@ -109,7 +109,7 @@
             this.listSex.Items = new string[] {
         "Mr.",
         "Mrs."};
-            this.listSex.Location = new System.Drawing.Point(35, 93);
+            this.listSex.Location = new System.Drawing.Point(115, 95);
             this.listSex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listSex.Name = "listSex";
             this.listSex.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
@@ -129,7 +129,7 @@
             this.bunifuDropdown1.Items = new string[] {
         "Mr.",
         "Mrs."};
-            this.bunifuDropdown1.Location = new System.Drawing.Point(35, 171);
+            this.bunifuDropdown1.Location = new System.Drawing.Point(115, 165);
             this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
             this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
@@ -151,7 +151,7 @@
             this.phoneNumber.LineIdleColor = System.Drawing.Color.Gray;
             this.phoneNumber.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.phoneNumber.LineThickness = 3;
-            this.phoneNumber.Location = new System.Drawing.Point(152, 204);
+            this.phoneNumber.Location = new System.Drawing.Point(251, 204);
             this.phoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.phoneNumber.Name = "phoneNumber";
             this.phoneNumber.Size = new System.Drawing.Size(260, 33);
@@ -170,7 +170,7 @@
             this.eMail.LineIdleColor = System.Drawing.Color.Gray;
             this.eMail.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.eMail.LineThickness = 3;
-            this.eMail.Location = new System.Drawing.Point(152, 241);
+            this.eMail.Location = new System.Drawing.Point(251, 245);
             this.eMail.Margin = new System.Windows.Forms.Padding(4);
             this.eMail.Name = "eMail";
             this.eMail.Size = new System.Drawing.Size(260, 33);
@@ -198,7 +198,7 @@
             this.bookBt.IconVisible = true;
             this.bookBt.IconZoom = 70D;
             this.bookBt.IsTab = true;
-            this.bookBt.Location = new System.Drawing.Point(227, 293);
+            this.bookBt.Location = new System.Drawing.Point(251, 296);
             this.bookBt.Name = "bookBt";
             this.bookBt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.bookBt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
@@ -223,7 +223,7 @@
             this.flightCode.LineIdleColor = System.Drawing.Color.Gray;
             this.flightCode.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.flightCode.LineThickness = 3;
-            this.flightCode.Location = new System.Drawing.Point(152, 28);
+            this.flightCode.Location = new System.Drawing.Point(251, 31);
             this.flightCode.Margin = new System.Windows.Forms.Padding(4);
             this.flightCode.Name = "flightCode";
             this.flightCode.Size = new System.Drawing.Size(260, 33);

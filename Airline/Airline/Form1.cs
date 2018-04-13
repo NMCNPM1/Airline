@@ -14,7 +14,10 @@ namespace Airline
     {
         public Form1()
         {
+            
             InitializeComponent();
+        
+
         }
 
         private void saleBt_Click(object sender, EventArgs e)
@@ -48,12 +51,12 @@ namespace Airline
             ruleChangeControl1.Visible = true;
             ruleChangeControl1.BringToFront();
         }
-
+        // nút tắt
         private void closeBt_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        // nút minimized
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -62,6 +65,48 @@ namespace Airline
         private void reportControl1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_MouseHover(object sender, EventArgs e)
+        {
+          //  changeWidthPanel(200,56,true);
+        }
+
+        private void panel1_MouseLeave(object sender, EventArgs e)
+        {
+           // changeWidthPanel(56,200,false);
+        }
+
+        //private void changeWidthPanel(int newWidth, int oldWidth, bool isGrow) // hàm thay đổi kích thước panel
+        //{
+        //    if (isGrow)
+        //        for (int i = oldWidth; i <= newWidth; i++)
+        //        {
+        //            panel1.Width = i;
+        //            searchBt.Width = i;
+        //            bookBt.Width = i;
+        //            reportBt.Width = i;
+        //            dataBt.Width = i;
+        //            changeBt.Width = i;
+        //        }
+        //    else
+        //        for (int i = oldWidth; i >= newWidth; i--)
+        //        {
+        //            panel1.Width = i;
+        //            searchBt.Width = i;
+        //            bookBt.Width = i;
+        //            reportBt.Width = i;
+        //            dataBt.Width = i;
+        //            changeBt.Width = i;
+        //        }
+
+            
+        //}
+
+        private void searchBt_MouseHover(object sender, EventArgs e)
+        {   
+        //    if(panel1.Width == 56)
+        //    changeWidthPanel(200, 56, true);
         }
     }
 }
