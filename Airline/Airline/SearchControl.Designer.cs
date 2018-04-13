@@ -29,18 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchControl));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.flightCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.from = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.to = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.departure = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.searchBt = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.flightInfo = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.from = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.to = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.flightInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -99,47 +104,12 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 5;
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.flightCode,
-            this.from,
-            this.to,
-            this.departure});
-            this.listView1.Location = new System.Drawing.Point(78, 192);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(358, 139);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // flightCode
-            // 
-            this.flightCode.Text = "Flight Code";
-            this.flightCode.Width = 100;
-            // 
-            // from
-            // 
-            this.from.Text = "From";
-            this.from.Width = 66;
-            // 
-            // to
-            // 
-            this.to.Text = "To";
-            this.to.Width = 66;
-            // 
-            // departure
-            // 
-            this.departure.Text = "Departure Time";
-            this.departure.Width = 115;
-            // 
             // searchBt
             // 
             this.searchBt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
             this.searchBt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.searchBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.searchBt.BorderRadius = 0;
+            this.searchBt.BorderRadius = 7;
             this.searchBt.ButtonText = "Search";
             this.searchBt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.searchBt.DisabledColor = System.Drawing.Color.Gray;
@@ -168,12 +138,96 @@
             this.searchBt.Textcolor = System.Drawing.Color.White;
             this.searchBt.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // flightInfo
+            // 
+            this.flightInfo.AllowUserToAddRows = false;
+            this.flightInfo.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.flightInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.flightInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flightInfo.BackgroundColor = System.Drawing.Color.White;
+            this.flightInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.flightInfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.flightInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.flightInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.flightInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.stt,
+            this.from,
+            this.to,
+            this.time,
+            this.price});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.flightInfo.DefaultCellStyle = dataGridViewCellStyle3;
+            this.flightInfo.DoubleBuffered = true;
+            this.flightInfo.EnableHeadersVisualStyles = false;
+            this.flightInfo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.flightInfo.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.flightInfo.HeaderForeColor = System.Drawing.Color.White;
+            this.flightInfo.Location = new System.Drawing.Point(58, 182);
+            this.flightInfo.Name = "flightInfo";
+            this.flightInfo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.flightInfo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.flightInfo.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
+            this.flightInfo.Size = new System.Drawing.Size(492, 153);
+            this.flightInfo.TabIndex = 8;
+            this.flightInfo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
+            // 
+            // stt
+            // 
+            this.stt.HeaderText = "STT";
+            this.stt.Name = "stt";
+            this.stt.ReadOnly = true;
+            this.stt.Width = 90;
+            // 
+            // from
+            // 
+            this.from.HeaderText = "From";
+            this.from.Name = "from";
+            this.from.ReadOnly = true;
+            this.from.Width = 90;
+            // 
+            // to
+            // 
+            this.to.HeaderText = "To";
+            this.to.Name = "to";
+            this.to.ReadOnly = true;
+            this.to.Width = 91;
+            // 
+            // time
+            // 
+            this.time.HeaderText = "Departure Time";
+            this.time.Name = "time";
+            this.time.ReadOnly = true;
+            this.time.Width = 90;
+            // 
+            // price
+            // 
+            this.price.HeaderText = "Price";
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            this.price.Width = 90;
+            // 
             // SearchControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flightInfo);
             this.Controls.Add(this.searchBt);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bunifuDatepicker1);
@@ -182,6 +236,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SearchControl";
             this.Size = new System.Drawing.Size(599, 349);
+            ((System.ComponentModel.ISupportInitialize)(this.flightInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,11 +250,12 @@
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader flightCode;
-        private System.Windows.Forms.ColumnHeader from;
-        private System.Windows.Forms.ColumnHeader to;
-        private System.Windows.Forms.ColumnHeader departure;
         private Bunifu.Framework.UI.BunifuFlatButton searchBt;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid flightInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn from;
+        private System.Windows.Forms.DataGridViewTextBoxColumn to;
+        private System.Windows.Forms.DataGridViewTextBoxColumn time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
     }
 }

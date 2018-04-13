@@ -182,7 +182,7 @@
             this.bookBt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
             this.bookBt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.bookBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bookBt.BorderRadius = 0;
+            this.bookBt.BorderRadius = 7;
             this.bookBt.ButtonText = "  Book";
             this.bookBt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookBt.DisabledColor = System.Drawing.Color.Gray;

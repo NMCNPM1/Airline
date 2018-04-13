@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 69);
+            this.label1.Location = new System.Drawing.Point(163, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 21);
             this.label1.TabIndex = 2;
@@ -51,7 +51,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(106, 119);
+            this.label2.Location = new System.Drawing.Point(163, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 21);
             this.label2.TabIndex = 4;
@@ -77,7 +77,7 @@
         "10",
         "11",
         "12"};
-            this.monthRp.Location = new System.Drawing.Point(193, 65);
+            this.monthRp.Location = new System.Drawing.Point(250, 65);
             this.monthRp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.monthRp.Name = "monthRp";
             this.monthRp.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
@@ -108,7 +108,7 @@
         "2028",
         "2029",
         "2030"};
-            this.yearRp.Location = new System.Drawing.Point(193, 114);
+            this.yearRp.Location = new System.Drawing.Point(250, 114);
             this.yearRp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.yearRp.Name = "yearRp";
             this.yearRp.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
@@ -123,7 +123,7 @@
             this.reportBt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
             this.reportBt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.reportBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.reportBt.BorderRadius = 0;
+            this.reportBt.BorderRadius = 7;
             this.reportBt.ButtonText = "  Export";
             this.reportBt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reportBt.DisabledColor = System.Drawing.Color.Gray;
@@ -139,7 +139,7 @@
             this.reportBt.IconVisible = true;
             this.reportBt.IconZoom = 70D;
             this.reportBt.IsTab = true;
-            this.reportBt.Location = new System.Drawing.Point(145, 170);
+            this.reportBt.Location = new System.Drawing.Point(200, 170);
             this.reportBt.Name = "reportBt";
             this.reportBt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
             this.reportBt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));

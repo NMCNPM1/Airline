@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RuleChangeControl));
             this.label1 = new System.Windows.Forms.Label();
             this.listSex = new Bunifu.Framework.UI.BunifuDropdown();
             this.newValue = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.updateRuleBt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
             // label1
@@ -88,10 +90,45 @@
             this.newValue.TabIndex = 11;
             this.newValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // updateRuleBt
+            // 
+            this.updateRuleBt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
+            this.updateRuleBt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.updateRuleBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.updateRuleBt.BorderRadius = 7;
+            this.updateRuleBt.ButtonText = "  Update";
+            this.updateRuleBt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updateRuleBt.DisabledColor = System.Drawing.Color.Gray;
+            this.updateRuleBt.Iconcolor = System.Drawing.Color.Transparent;
+            this.updateRuleBt.Iconimage = ((System.Drawing.Image)(resources.GetObject("updateRuleBt.Iconimage")));
+            this.updateRuleBt.Iconimage_right = null;
+            this.updateRuleBt.Iconimage_right_Selected = null;
+            this.updateRuleBt.Iconimage_Selected = null;
+            this.updateRuleBt.IconMarginLeft = 0;
+            this.updateRuleBt.IconMarginRight = 0;
+            this.updateRuleBt.IconRightVisible = true;
+            this.updateRuleBt.IconRightZoom = 0D;
+            this.updateRuleBt.IconVisible = true;
+            this.updateRuleBt.IconZoom = 50D;
+            this.updateRuleBt.IsTab = true;
+            this.updateRuleBt.Location = new System.Drawing.Point(183, 205);
+            this.updateRuleBt.Name = "updateRuleBt";
+            this.updateRuleBt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.updateRuleBt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
+            this.updateRuleBt.OnHoverTextColor = System.Drawing.Color.White;
+            this.updateRuleBt.selected = false;
+            this.updateRuleBt.Size = new System.Drawing.Size(112, 49);
+            this.updateRuleBt.TabIndex = 12;
+            this.updateRuleBt.Text = "  Update";
+            this.updateRuleBt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.updateRuleBt.Textcolor = System.Drawing.Color.White;
+            this.updateRuleBt.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // RuleChangeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.updateRuleBt);
             this.Controls.Add(this.newValue);
             this.Controls.Add(this.listSex);
             this.Controls.Add(this.label1);
@@ -107,5 +144,6 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuDropdown listSex;
         private Bunifu.Framework.UI.BunifuMaterialTextbox newValue;
+        private Bunifu.Framework.UI.BunifuFlatButton updateRuleBt;
     }
 }
